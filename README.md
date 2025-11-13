@@ -124,12 +124,13 @@ A documentação completa está disponível em:
 
 ## 📜 Licença
 
-MIT License (ou outra que você decidir)
+MIT License
 
 ---
 
 ## 📣 Autor
 
+Gabriel izar
 Projeto criado para estudos avançados de  
 **Oracle 23ai, APEX, modelagem de dados e aplicações sociais complexas.**
 
