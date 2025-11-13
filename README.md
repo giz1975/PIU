@@ -61,5 +61,76 @@ O nome PIU vem de:
 
 ### ✔️ Padrão de Nomes (Padrão PIU)
 
-Todos os objetos seguem o padrão:
+Todos os objetos seguem o padrão: SSS_TTT_nomeCamelCase
+
+- `SSS` = sistema (piu)  
+- `TTT` = sigla da tabela (usr, pst, msg, med, vec, etc.)  
+- `nomeCamelCase` = nome do objeto em camelCase  
+- Tudo em minúsculas  
+- SQL/DDL sempre minúsculo  
+- PL/SQL (procedures, packages, functions e triggers) sempre camelCase  
+
+Exemplos:
+
+- `piu_usr_users`  
+- `piu_pst_posts`  
+- `piu_trg_bu_usr_updateTimestamp`  
+- `piu_vec_postEmbeddings`
+
+---
+
+## 🧬 IA no PIU (Oracle 23ai)
+
+O PIU utiliza o tipo nativo: VECTOR(1536, FLOAT32)
+
+para armazenar embeddings semânticos de:
+
+- posts (`piu_vec_postEmbeddings`)
+- usuários (`piu_vec_userEmbeddings`)
+
+Esses vetores são utilizados para:
+
+- recomendações (“Who to follow”)  
+- busca semântica de posts  
+- trending topics inteligentes  
+- detecção de clusters de interesse  
+- posts semelhantes (“More like this”)  
+
+---
+
+## 📦 Estrutura de Pastas Recomendada
+
+/db
+/ddl
+/dml
+/packages
+/functions
+/triggers
+/scripts
+/apex
+/docs
+README.md
+DATA_MODEL.md
+
+
+---
+
+## 📘 Documentação do Modelo de Dados
+
+A documentação completa está disponível em:
+
+➡️ **DATA_MODEL.md**
+
+---
+
+## 📜 Licença
+
+MIT License (ou outra que você decidir)
+
+---
+
+## 📣 Autor
+
+Projeto criado para estudos avançados de  
+**Oracle 23ai, APEX, modelagem de dados e aplicações sociais complexas.**
 
