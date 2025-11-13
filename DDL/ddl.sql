@@ -1,6 +1,6 @@
 
 /*******************************************************************************
-*** Clean-up script, run only if you need to execute the script more than ounce
+*** Clean-up script, run only if you need to execute the script more than once
 *******************************************************************************/
 
 drop table piu_dom_mediaType cascade constraints;
