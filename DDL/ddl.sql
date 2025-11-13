@@ -1,39 +1,5 @@
 
 /*******************************************************************************
-*** Clean-up script, run only if you need to execute the script more than once
-*******************************************************************************/
-
-drop table piu_dom_mediaType cascade constraints;
-drop table piu_dom_postVisibility cascade constraints;
-drop table piu_dom_followStatus cascade constraints;
-drop table piu_dom_interactionType cascade constraints;
-drop table piu_dom_shortLinkStatus cascade constraints;
-drop table piu_dom_messageRole cascade constraints;
-drop table piu_dom_messageStatus cascade constraints;
-drop table piu_dom_notificationType cascade constraints;
-drop table piu_dom_notificationStatus cascade constraints;
-drop table piu_dom_loginResult cascade constraints;
-drop table piu_dom_loginResult cascade constraints;
-drop table piu_dom_reportType cascade constraints;
-drop table piu_dom_reportStatus cascade constraints;
-drop table piu_dom_embeddingModel cascade constraints;
-drop table piu_usr_users cascade constraints;
-drop table piu_pst_posts cascade constraints;
-drop table piu_med_media cascade constraints;
-drop table piu_lnk_shortLinks cascade constraints;
-drop table piu_fol_follows cascade constraints;
-drop table piu_int_interactions cascade constraints;
-drop table piu_msg_directMessages cascade constraints;
-drop table piu_msg_messageUsers cascade constraints;
-drop table piu_men_mentions cascade constraints;
-drop table piu_tag_hashtags cascade constraints;
-drop table piu_tag_postHashtags cascade constraints;
-drop table piu_not_notifications cascade constraints;
-drop table piu_rep_reports cascade constraints;
-drop table piu_vec_postEmbeddings cascade constraints;
-drop table piu_vec_userEmbeddings cascade constraints;
-
-/*******************************************************************************
 *** Domains
 *******************************************************************************/
 
@@ -972,3 +938,38 @@ comment on column piu_vec_userEmbeddings.dom_embeddingModelCode is 'Reference to
 comment on column piu_vec_userEmbeddings.vec_embedding is 'Vector representation (embedding) of the user profile or behavior, stored using the Oracle VECTOR data type.';
 comment on column piu_vec_userEmbeddings.vec_createdAt is 'Timestamp when the user embedding record was created.';
 comment on column piu_vec_userEmbeddings.vec_updatedAt is 'Timestamp of the last update to the user embedding record.';
+
+/*******************************************************************************
+*** Clean-up script, run only if you need to execute the script more than once
+*******************************************************************************/
+
+exit;
+drop table piu_dom_mediaType cascade constraints;
+drop table piu_dom_postVisibility cascade constraints;
+drop table piu_dom_followStatus cascade constraints;
+drop table piu_dom_interactionType cascade constraints;
+drop table piu_dom_shortLinkStatus cascade constraints;
+drop table piu_dom_messageRole cascade constraints;
+drop table piu_dom_messageStatus cascade constraints;
+drop table piu_dom_notificationType cascade constraints;
+drop table piu_dom_notificationStatus cascade constraints;
+drop table piu_dom_loginResult cascade constraints;
+drop table piu_dom_loginResult cascade constraints;
+drop table piu_dom_reportType cascade constraints;
+drop table piu_dom_reportStatus cascade constraints;
+drop table piu_dom_embeddingModel cascade constraints;
+drop table piu_usr_users cascade constraints;
+drop table piu_pst_posts cascade constraints;
+drop table piu_med_media cascade constraints;
+drop table piu_lnk_shortLinks cascade constraints;
+drop table piu_fol_follows cascade constraints;
+drop table piu_int_interactions cascade constraints;
+drop table piu_msg_directMessages cascade constraints;
+drop table piu_msg_messageUsers cascade constraints;
+drop table piu_men_mentions cascade constraints;
+drop table piu_tag_hashtags cascade constraints;
+drop table piu_tag_postHashtags cascade constraints;
+drop table piu_not_notifications cascade constraints;
+drop table piu_rep_reports cascade constraints;
+drop table piu_vec_postEmbeddings cascade constraints;
+drop table piu_vec_userEmbeddings cascade constraints;
