@@ -118,7 +118,7 @@ DATA_MODEL.md
 
 A documentação completa está disponível em:
 
-➡️ **DATA_MODEL.md**
+➡️ **[DATA_MODEL.md](./DATA_MODEL.md)**
 
 ---
 
