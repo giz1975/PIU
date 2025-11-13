@@ -179,11 +179,7 @@ USERS (1) ───< USER_EMBEDDINGS (N)
 
 ## ✨ Diagrama Visual
 
-Para gerar um diagrama visual no **dbdiagram.io**, use:
-
-https://dbdiagram.io
-
-> Basta copiar a seção MER Simplificado e as listas de entidades.
+![database.png](./database.png)
 
 ---
 
