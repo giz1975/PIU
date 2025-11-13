@@ -100,18 +100,17 @@ Esses vetores são utilizados para:
 
 ## 📦 Estrutura de Pastas Recomendada
 
-/db
-/ddl
-/dml
-/packages
-/functions
-/triggers
-/scripts
-/apex
-/docs
-README.md
-DATA_MODEL.md
-
+/db  
+/ddl  
+/dml  
+/packages  
+/functions  
+/triggers  
+/scripts  
+/apex  
+/docs  
+README.md  
+DATA_MODEL.md  
 
 ---
 
