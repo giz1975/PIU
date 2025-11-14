@@ -40,23 +40,61 @@ O projeto encontra-se atualmente em **Fase 3 – MVP**.
 O roadmap detalhado está disponível em  
 [`ROADMAP.md`](./ROADMAP.md)
 
-Mas em resumo:
+---
 
-### 🔹 MVP
-- Login e cadastro
-- Criar post (texto + visibilidade)
-- Timeline simples
-- Perfil do usuário
+## 🧱 Modelo de Dados (MER)
 
-### 🔸 Pós-MVP
-- Likes / Comentários / Seguidores  
-- Hashtags  
-- Imagens  
+Diagrama ER em Mermaid:
 
-### 🔹 Avançado (IA)
-- Embeddings  
-- Busca semântica  
-- Recomendação personalizada  
+```mermaid
+erDiagram
+
+    piu_usr_users {
+        number usr_id_user
+        varchar usr_fullName
+        varchar usr_username
+        varchar usr_email
+        varchar usr_passwordHash
+        varchar usr_bio
+        varchar usr_profileImageUrl
+        varchar usr_accountStatus
+        date    usr_createdAt
+        date    usr_updatedAt
+    }
+
+    piu_pst_posts {
+        number pst_id_post
+        number usr_id_user
+        clob   pst_contentMarkdown
+        varchar dom_postVisibilityCode
+        date   pst_createdAt
+        date   pst_updatedAt
+    }
+
+    piu_dom_postVisibility {
+        varchar dom_postVisibilityCode
+        varchar dom_description
+    }
+
+    piu_pst_posts }o--|| piu_usr_users : "posted by"
+    piu_pst_posts }o--|| piu_dom_postVisibility : "visibility"
+```
 
 ---
 
+## 🧪 Seed Data
+
+Usuários iniciais:
+
+- **gabriel** – criador do PIU  
+- **helena** – fotógrafa e urbanista  
+- **epifanio** – personagem literário e comentarista político  
+
+---
+
+## 🧭 Como Rodar
+
+1. Configurar workspace + schema  
+2. Rodar DDL  
+3. Rodar DML  
+4. Criar app no APEX  
